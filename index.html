@@ -88,7 +88,7 @@
     <script>
       // Set this constant to true to debug the placement of bombs without
       // having to click on all cells to reveal them.
-      const CHEAT_REVEAL_ALL = false
+      const CHEAT_REVEAL_ALL = true
 
       const ROWS_COUNT = 10
       const COLS_COUNT = 10
@@ -114,6 +114,21 @@
 
       //
       // TODO: Task 1 - add some bombs at fixed positions.
+
+      cells[1][2].isBomb = true
+      cells[0][1].isBomb = true
+      cells[1][1].isBomb = true
+      cells[3][1].isBomb = true
+      cells[2][1].isBomb = true
+      cells[5][1].isBomb = true
+      cells[6][3].isBomb = true
+      cells[8][2].isBomb = true
+      cells[3][9].isBomb = true
+      cells[9][7].isBomb = true
+      cells[2][6].isBomb = true
+      cells[6][5].isBomb = true
+
+    
       //
 
       //
