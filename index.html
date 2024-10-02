@@ -92,6 +92,7 @@
 
       const ROWS_COUNT = 10
       const COLS_COUNT = 10
+      const BOMBS_COUNT = 10
 
       let defeat = false
       let victory = false
@@ -130,12 +131,32 @@
 
     
       //
+/*       cells[1][2].isBomb =true;
+      cells[0][2].isBomb =true;
+      cells[1][4].isBomb =true;
+      cells[7][2].isBomb =true;
+      cells[1][8].isBomb =true;
+      cells[6][2].isBomb =true;
+      cells[1][9].isBomb =true;
+      cells[2][2].isBomb =true;
+      cells[7][7].isBomb =true;
+      cells[5][7].isBomb =true;
+      cells[6][3].isBomb =true;
+      cells[9][0].isBomb =true; */
 
+      
       //
       // TODO: Task 2 - Comment out the code of task 1. Instead of adding bombs in fixed places, add 10 of them in random places.
       //                Add a BOMBS_COUNT constant so that you can easily change the amount of bombs placed. Put it next to the
-      //                other constants.
+      //                other constants. 
       //
+
+     
+  function placeBombRandom(){
+      cells[Math.floor(Math.random() * 10)][Math.floor(Math.random() * 10)].isBomb =true;
+  }
+
+for(i = 1;i<=BOMBS_COUNT; i++){placeBombRandom()}
 
       // Once the game has been initialized, we "render" it.
       render()
